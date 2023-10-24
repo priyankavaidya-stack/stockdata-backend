@@ -30,5 +30,5 @@ This is the backend for the Stock Data Project. It provides the necessary server
 
 ### Running the Server
 
-To start the server, run: `npm start`
+To start the server, run: `node app.js`
 
