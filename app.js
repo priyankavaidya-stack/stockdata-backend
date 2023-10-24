@@ -9,7 +9,7 @@ const {generateMockData:mockDataGenerator} = require("./mockDataGenerator")
 app.use(cors());
 
 app.get('/api/search', async(req,res)=>{
-    console.log("sesd");
+    
     let {symbol,period}= req.query;
 
     if(period === "hourly"){
