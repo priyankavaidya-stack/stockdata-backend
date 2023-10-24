@@ -1,5 +1,4 @@
 async function generateMockData(symbol, period) {
-    console.log(`mock data generating function ${symbol},${period}`);
   
     if(period === "daily"){
       url = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${symbol}&interval=${period}&apikey=${process.env.KEY}`;
@@ -8,7 +7,6 @@ async function generateMockData(symbol, period) {
     }
     const data = await fetch(url);
     const jsonresponse = await data.json();
-    console.log(jsonresponse);
     return jsonresponse;
   }
   
