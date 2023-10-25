@@ -21,7 +21,7 @@ app.get('/api/search', async(req,res)=>{
 });
 
 // const port = process.env.PORT || 8001;
-const port = 8081;
-app.listen(port,()=>{
+
+app.listen(process.env.PORT || 8081,()=>{
    console.log(`Server is listening on  ${port}`)
 });
